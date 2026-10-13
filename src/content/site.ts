@@ -18,7 +18,7 @@ export const site = {
     linkedin: "https://www.linkedin.com/in/brian-birbrayer",
     website: "https://birbs.ai",
     /** TODO(Brian): add your GitHub profile URL, e.g. "https://github.com/<username>". Hidden while null. */
-    github: null as string | null,
+    github: "https://github.com/birbrayerb" as string | null,
   },
 
   /** TODO(Brian): drop a headshot in /public (e.g. /headshot.jpg) and set the path. Hidden while null. */
