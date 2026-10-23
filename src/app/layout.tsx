@@ -14,8 +14,22 @@ export const metadata: Metadata = {
   description,
   authors: [{ name: site.name, url: site.url }],
   alternates: { canonical: "/" },
-  openGraph: { type: "profile", url: site.url, title: site.name, description, siteName: site.name },
-  twitter: { card: "summary_large_image", title: site.name, description },
+  openGraph: {
+    type: "website",
+    url: site.url,
+    siteName: site.name,
+    title: `${site.name} — ${site.title}`,
+    description,
+    locale: "en_US",
+    images: [{ url: `${site.url}/og.png`, width: 1200, height: 630, alt: `${site.name} — ${site.title}`, type: "image/png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${site.name} — ${site.title}`,
+    description,
+    images: [{ url: `${site.url}/og.png`, alt: `${site.name} — ${site.title}` }],
+  },
+  icons: { icon: "/icon.svg", apple: "/apple-touch-icon.png" },
 };
 
 export const viewport: Viewport = {
